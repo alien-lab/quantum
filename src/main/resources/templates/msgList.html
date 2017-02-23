@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        var openid = [[${openid}]];
+        console.log("openid:"+openid);
+        /*]]>*/
+    </script>
+    <script th:src="@{/msg/js/msgList.js}"></script>
+</head>
+<body>
+    <p th:text="${openid}">这是一个消息列表页面，消息是发来的。</p>
+    <p>这是一个消息列表页面，消息是发来的。</p>
+</body>
+</html>

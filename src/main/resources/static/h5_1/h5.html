@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Quantum Inspiration</title>
+
+    <link rel="stylesheet" href="js/swipper/css/swiper.min.css">
+    <link rel="stylesheet" href="js/swipper/css/animate.min.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+
+        }
+        body {
+            background: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#fff;
+            margin: 0;
+            padding: 0;
+            max-width:640px;
+            max-height:1007px;
+            margin:0 auto;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-button-disabled{
+            display:none;
+        }
+        .swiper-button-next{
+            top: 95%;
+            left: 47.1%;
+            transform: rotate(90deg);
+        }
+        .h5bgimage{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+        .pageword{
+            width:100%;
+            position:absolute;
+            bottom:18%;
+            left:0;
+        }
+        .pageword.top{
+        	bottom:25% !important;
+        }
+    </style>
+    <script>
+        window.shareObject={
+            title:"Quantum Inspiration",
+            link:window.location.href,
+            imgUrl:'http://www.bigercat.com/quantum/h5_1/res/image/logo.png',
+            desc:'量子直觉'
+        }
+    </script>
+    <script src="js/wechat.js"></script>
+
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="h5bgimage swiper-lazy" data-src="res/image/p1-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p1-word.png" data-slide-in="at 500 from fadeIn use swing during 2000"  />
+        </div>
+        <div class="swiper-slide">
+            <img class="h5bgimage swiper-lazy" data-src="res/image/p2-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p2-word.png" data-slide-in="at 500 from fadeIn use swing during 2000" />
+        </div>
+        <div class="swiper-slide">
+            <img class="h5bgimage swiper-lazy" data-src="res/image/p3-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p3-word.png" data-slide-in="at 500 from fadeIn use swing during 2000"  />
+        </div>
+        <div class="swiper-slide">
+            <img id="p4bg" class="h5bgimage swiper-lazy" data-src="res/image/p4-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p4-word.png" data-slide-in="at 500 from fadeIn use swing during 2000" />
+        </div>
+        <div class="swiper-slide">
+            <img id="p5bg" class="h5bgimage swiper-lazy" data-src="res/image/p5-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p5-word.png" data-slide-in="at 500 from fadeIn use swing during 2000"  />
+        </div>
+        <div class="swiper-slide">
+            <img id="p6bg" class="h5bgimage swiper-lazy" data-src="res/image/p6-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p6-word.png" data-slide-in="at 500 from fadeIn use swing during 2000" />
+        </div>
+        <div class="swiper-slide">
+            <img id="p7bg" class="h5bgimage swiper-lazy" data-src="res/image/p7-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword" src="res/image/p7-word.png" data-slide-in="at 500 from fadeIn use swing during 2000" />
+        </div>
+        <div class="swiper-slide">
+            <img id="p8bg" class="h5bgimage swiper-lazy" data-src="res/image/p8-bak.jpg" />
+            <div class="swiper-lazy-preloader"></div>
+            <img class="ani pageword top" src="res/image/p8-word-1.png" data-slide-in="at 500 from fadeIn use swing during 2000" data-slide-out="at 1500 to fadeOut use swing during 1000 force" />
+            <img class="ani pageword middle" src="res/image/p8-word-2.png" data-slide-in="at 2500 from fadeIn use swing during 2000" data-slide-out="at 500 to fadeOut use swing during 1000 force" />
+            <img class="ani pageword" src="res/image/p8-word-3.png" data-slide-in="at 6500 from fadeIn use swing during 2000" />
+        </div>
+        <div class="swiper-slide">
+            <img class="h5bgimage swiper-lazy" data-src="res/image/p9.gif" />
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+</div>
+<audio src="http://www.bigercat.com/qih5/resources/music/h5bgm.mp3" loop autoplay="autoplay"></audio>
+
+<script src="js/swipper/js/swiper.jquery.min.js"></script>
+<script src="js/swipper/js/swiper.animate-twice.min.js"></script>
+
+<script src="js/h5.js"></script>
+
+</body>
+</html>
